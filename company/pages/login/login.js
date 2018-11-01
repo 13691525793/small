@@ -3,8 +3,6 @@ var config = require('../../config.js')
 Page({
   data: {
     remind: '加载中',
-    // email: 'fuxiaolei@sinoac.org',
-    // password: 'a123456',
     toWhere: "",
     email: "",
     password: "",

@@ -38,7 +38,6 @@ Page({
   },
   toLogin: function() {
     var isLogin = wx.getStorageSync(config.USER_IS_LOGIN);
-    console.log(">>>>>toLogin>>>>>>" + isLogin)
     var that = this
     if (isLogin) {
       wx.showModal({
@@ -47,7 +46,6 @@ Page({
         success(res) {
           if (res.confirm) {
             api.logOut(function(opt) {
-              console.log(">>>>>logOut>>api>>>" + opt.data.status)
               if (opt.statusCode == 200) {
                 if (opt.data.status == 200) {
                   wx.removeStorageSync(config.USER_IS_LOGIN)

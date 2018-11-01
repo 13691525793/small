@@ -35,8 +35,6 @@ Page({
    */
   toSingle: function() {
     var isLogin = wx.getStorageSync(config.USER_IS_LOGIN);
-  // var acTokenId=  wx.getStorageSync(config.AC_TOKEN_ID_KEY);
-    console.log(">>>>>>>>toSingle>>>>>>>" + isLogin)
     if (isLogin){
       wx.navigateTo({
         url: '../tiedsingle/single?title=关联单个产品',
@@ -54,8 +52,6 @@ Page({
    */
   toMutil: function() {
     var isLogin = wx.getStorageSync(config.USER_IS_LOGIN);
-    console.log(">>>>>>>> toMutil>>>>>>>" + isLogin)
-    // var acTokenId = wx.getStorageSync(config.AC_TOKEN_ID_KEY);
     if (isLogin) {
       wx.navigateTo({
         url: '../tiedmutil/mutil?title=关联批量产品',
@@ -74,8 +70,6 @@ Page({
   toDelete: function() {
 
     var isLogin = wx.getStorageSync(config.USER_IS_LOGIN);
-    console.log(">>>>>>>> toDelete>>>>>>>" + isLogin)
-    // var acTokenId = wx.getStorageSync(config.AC_TOKEN_ID_KEY);
     if (isLogin) {
       wx.navigateTo({
         url: '../tieddelete/delete?title=解除批量产品',

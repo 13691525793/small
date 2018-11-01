@@ -9,7 +9,6 @@ Page({
    */
   data: {
     qrcode: "选择已关联码",
-    // qrcode: "http://cac.top/a76/l1/|420ezy9ijzem833674"
     loading: false
   },
 
@@ -50,7 +49,7 @@ Page({
       return;
     }
 
-    if (this.data.qrcode.indexOf("http://cac.top") == -1) {
+    if (this.data.qrcode.indexOf(config.CODE_PREFIX) == -1) {
       wx.showToast({
         title: '非平台生码',
         image: '../../images/warm.png',

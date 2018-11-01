@@ -34,7 +34,6 @@ Page({
     var email = wx.getStorageSync(config.USER_EMAIL_KEY);
     if (email) {
       api.queryProduct(email, function(res) {
-
         that.setData({
           goods: res.data,
           goodsId: res.data[0].id,
@@ -143,7 +142,7 @@ Page({
       return;
     }
 
-    if (this.data.startUrl.indexOf("http://cac.top") == -1) {
+    if (this.data.startUrl.indexOf(config.CODE_PREFIX) == -1) {
       wx.showToast({
         title: '非平台生码',
         image: '../../images/warm.png',
@@ -155,7 +154,7 @@ Page({
       return;
     }
 
-    if (this.data.endUrl.indexOf("http://cac.top") == -1) {
+    if (this.data.endUrl.indexOf(config.CODE_PREFIX) == -1) {
       wx.showToast({
         title: '非平台生码',
         image: '../../images/warm.png',
@@ -169,7 +168,6 @@ Page({
     var obj = {
       email: wx.getStorageSync(config.USER_EMAIL_KEY),
       productId: this.data.goodsId,
-      // startUrl: this.data.qrcode,
       startUrl: this.data.startUrl,
       endUrl: this.data.endUrl,
       salesPlace: this.data.address,

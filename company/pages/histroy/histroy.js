@@ -15,8 +15,7 @@ Page({
   onLoad: function(options) { 
     var that = this;
     var list = config.histroy;
-    
-    console.log(">>>>>histroy>>>>>>>" + list.length)
+
     for (var i = 0; i < list.length; i++) {
       that.data.list.push(list[i]);
     }
