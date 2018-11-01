@@ -1,0 +1,56 @@
+<!--pages/mine/mine.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <!-- 登录按钮 -->
+    <view class="container">
+      <view bindtap="toLogin" class="userinfo">
+        <image class="userinfo-avatar" src="{{protrait}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{nickName}}</text>
+      </view>
+    </view>
+
+
+    <!-- 绑码记录 -->
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__bd">
+        <view bindtap='toHistroy' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">绑码记录</view>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+
+        <!-- 以后升级在做 联系我们 -->
+        <!-- <view  class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <button open-type='contact' class="weui-media-box__title" hover-class="weui-cell_active">联系我们</button>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view> -->
+      </view>
+    </view>
+    <!--升级版本在做 分享 -->
+    <!-- <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__bd">
+        <view  class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <button open-type='share' class="weui-media-box__title" hover-class="weui-cell_active">分享</button>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
+    </view> -->
+
+    <!-- 更多 -->
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__bd">
+        <view bindtap='toMore' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">更多</view>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

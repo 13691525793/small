@@ -1,0 +1,9 @@
+/* pages/index.wxss */
+.swiper-box{
+  display: block;
+  position: relative;
+  height: 420rpx;
+}
+.slide-image{
+  width: 100%;
+}

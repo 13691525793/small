@@ -1,0 +1,41 @@
+<!--pages/more/more.wxml-->
+<view class="page">
+  <view class="page__bd">
+
+    <!-- 服务协议 -->
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__bd">
+        <view bindtap='toService' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">服务协议</view>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+
+        <!-- 隐私政策 -->
+
+        <!-- <view bindtap='toPrivacy' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">隐私政策</view>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view> -->
+
+      </view>
+    </view>
+
+    <!-- 关于我们 -->
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__bd">
+        <view bindtap='toAboutUs' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">关于我们</view>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<!--pages/aboutus/aboutus.wxml-->
+<view class='container'>
+  <view class='image_box'>
+    <image class="img_logo" mode='aspectFit' src="{{logo}}" />
+  </view>
+
+  <view class="content_box">
+    <text class='content_text'>{{content1}}\n</text>
+  </view>
+  <view class="content_box">
+    <text class='content_text'>{{content2}}\n</text>
+  </view>
+  <view class="content_box">
+    <text class='content_text'>{{content3}}\n</text>
+  </view>
+  <view class=" content_box">
+    <text class='content_text'>{{content4}}\n</text>
+  </view>
+  <!-- 切换 -->
+  <!-- <view bindtap="change" class="state">{{isFolded?'展开':'收起'}}</view> -->
+
+  <view class='email_box'>
+    <text class='email_text'>邮箱：{{email}}</text>
+  </view>
+
+
+
+</view>

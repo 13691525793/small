@@ -1,0 +1,23 @@
+<!--pages/histroy/histroy.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <block wx:for="{{list}}" wx:key="*this">
+      <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__bd">
+          <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+              <view class="weui-media-box__title">操作类型:{{item.mode}}</view>
+              <view class="weui-media-box__title">操作人:{{item.user}}</view>
+              <view wx:if="{{item.goodsName!=null}}" class="weui-media-box__title">产品名称:{{item.goodsName}}</view>
+              <view wx:if="{{item.mode!='解除关联产品'}}" class="weui-media-box__title">销售区域:{{item.area}}</view>
+              <view wx:if="{{item.startUrl!=null}}" class="weui-media-box__title">起始码:{{item.startUrl}}</view>
+              <view wx:if="{{item.endUrl!=null}}" class="weui-media-box__title">结束码:{{item.endUrl}}</view>
+              <view class="weui-media-box__title">绑码数量:{{item.count}}</view>
+              <view class="weui-media-box__title">操作时间:{{item.time}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

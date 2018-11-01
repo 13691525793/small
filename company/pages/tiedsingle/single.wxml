@@ -1,0 +1,49 @@
+<!--pages/tiedsingle/single.wxml-->
+<view class="page">
+  <view class="page-body">
+    <view class="page__bd">
+
+      <!-- 选择商品 -->
+      <view class="weui-btn-area">
+        <view class="btn-area">
+          <picker bindchange="bindGoodsChange" value="{{goods[index].name}}" range="{{goods}}" range-key="{{'name'}}" mode="selector">
+            <button size="default" type="default" plain="true" class="weui-btn" hover-class="weui-cell_active">
+              <view class="btn_style_text">{{goods[index].name}}</view>
+            </button>
+          </picker>
+        </view>
+      </view>
+
+      <!-- 销售区域 -->
+      <view class="weui-btn-area">
+        <view class="btn-area">
+          <picker bindchange="bindPickerChange" mode="region" value="{{region}}"> 
+            <button size="default" type="default" plain="true" class="weui-btn" hover-class="weui-cell_active">
+              <view class="btn_style_text">{{address}}</view>
+            </button>
+          </picker>
+        </view>
+      </view>
+
+      <!-- 选择关联码 -->
+      <view class="weui-btn-area">
+        <view class="btn-area" bindtap='choose_qrcode'>
+          <button open-size="default" type="default" plain="true" class="weui-btn" hover-class="weui-cell_active">
+            <view class="btn_style_text">{{qrcode}}</view>
+          </button>
+        </view>
+      </view>
+
+      <!-- 关联信息 -->
+      <view class="weui-btn-area">
+        <view class="btn-area" bindtap='submit'>
+          <button size="default" type="default" plain="true" class="weui-btn" hover-class="weui-cell_active"  loading="{{loading}}">关联信息</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+

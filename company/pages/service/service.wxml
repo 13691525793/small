@@ -1,0 +1,41 @@
+<!--pages/service/service.wxml-->
+<view class="container">
+
+  <view class="page-body">
+    <view class="page-section page-section-spacing">
+      <view class="text-box" scroll-y="true" scroll-top="{{scrollTop}}">
+        <view class='content_box'>
+          <text>{{text1}}</text>
+        </view>
+        <view class='content_box'>
+          <text>{{text2}}</text>
+        </view>
+        <view class='content_box'>
+          <text>{{text3}}</text>
+        </view>
+        <view class='content_box'>
+          <text>{{text4}}</text>
+        </view>
+        <view class='content_box'>
+          <text>{{text5}}</text>
+        </view>
+        <view class='content_box'>
+          <text>{{text6}}</text>
+        </view>
+        <view class='content_box'>
+          <text>{{text7}}</text>
+        </view>
+        <view class='content_box'>
+          <text>{{text8}}</text>
+        </view>
+        <view class='content_box'>
+          <text>{{text9}}</text>
+        </view>
+        <view class='content_box'>
+          <text>{{text10}}</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>

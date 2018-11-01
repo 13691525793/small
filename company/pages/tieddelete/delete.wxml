@@ -1,0 +1,25 @@
+<!--pages/tieddelete/delete.wxml-->
+<view class="page">
+  <view class="page-body">
+<view class="page__bd">
+
+      <!-- 选已关联码 -->
+      <view class="weui-btn-area">
+        <view class="btn-area" bindtap='choose_delete'>
+          <button open-size="default" type="default" plain="true" class="weui-btn" hover-class="weui-cell_active">
+            <view class="btn_style_text">{{qrcode}}</view>
+          </button>
+        </view>
+      </view>
+
+      <!-- 关联信息 -->
+      <view class="weui-btn-area">
+        <view class="btn-area" bindtap='delete'>
+          <button size="default" type="default" plain="true" class="weui-btn" loading="{{loading}}" hover-class="weui-cell_active">解除关联</button>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>
+

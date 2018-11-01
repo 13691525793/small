@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#296AFA",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "中国防伪-企业版",
+  "backgroundColor": "#F2F2F2",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 50,
+  "disableScroll": false
+}
